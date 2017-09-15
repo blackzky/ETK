@@ -1,8 +1,6 @@
 console.log('Time!');
-
-
-describe('Test', () => {
-    it('test', () => {
+describe('Test', function () {
+    it('test', function () {
         expect(true).toBeTruthy();
     });
 });

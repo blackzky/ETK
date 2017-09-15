@@ -13,7 +13,7 @@
         "compile": "tsc -p src/",
         "deploy": "mv build/**/*.spec.js test/unit/",
         "clean": "rm -rf build/* test/unit/*",
-        "test": "karma start ./test/client/karma.conf.js"
+        "test": "karma start ./test/karma.conf.js"
     },
     "author": "Gervel Giva",
     "license": "ISC",
@@ -23,5 +23,10 @@
         "karma-chrome-launcher": "^2.2.0",
         "karma-jasmine": "^1.1.0",
         "karma-jasmine-html-reporter": "^0.2.2"
+    },
+    "dependencies": {
+        "@types/jasmine": "^2.6.0",
+        "@types/jasminewd2": "^2.0.3",
+        "@types/node": "^8.0.28"
     }
 }
