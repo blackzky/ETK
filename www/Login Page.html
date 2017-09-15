@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://kddpsvrams/timekeeping/WebLogin.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Login Page
+</title>
+    <style type="text/css">
+        .style1
+        {
+            color: #0033CC;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="http://kddpsvrams/timekeeping/WebLogin.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTk3OTQ2MzkxMA9kFgICAw9kFgICAQ9kFgJmD2QWAgINDxAPFgIeB0NoZWNrZWRoZGRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQURTG9naW4xJFJlbWVtYmVyTWUzp7KWp5qA7TtekggHeFvKY5OMIflnF3M2XcW8nLUfwQ==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Login Page_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Login Page_files/WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLak+CDBAKUvNa1DwL666vYDAKC0q+kBgKnz4ybCH11U2y7GmUGoqDlFa9KnHDIoFsT9IpVfrMH+YsRHbG6">
+</div>
+    <div align="center">
+    
+        <br>
+        <h1 style="text-align:center; font-family: tahoma;">
+            Electronic time Keeping -<span class="style1"><em>Actatek</em></span></h1>
+        <br>
+    
+        <br>
+        <table id="Login1" cellspacing="0" cellpadding="0" border="0" style="background-color:#F7F7DE;border-color:#CCCC99;border-width:1px;border-style:Solid;font-family:Verdana;font-size:10pt;border-collapse:collapse;">
+	<tbody><tr>
+		<td>
+                <table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
+                    <tbody><tr>
+                        <td>
+                            <table cellpadding="0">
+                                <tbody><tr>
+                                    <td align="center" colspan="2" style="color:White;background-color:#6B696B;font-weight:bold;">
+                                        Log In</td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <label for="Login1_UserName" id="Login1_UserNameLabel">User Name:</label>
+                                    </td>
+                                    <td>
+                                        <input name="Login1$UserName" type="text" id="Login1_UserName" style="width:140px;">
+                                        <span id="Login1_UserNameRequired" title="User Name is required." style="color:Red;visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <label for="Login1_Password" id="Login1_PasswordLabel">Password:</label>
+                                    </td>
+                                    <td>
+                                        <input name="Login1$Password" type="password" id="Login1_Password" style="width:140px;">
+                                        <span id="Login1_PasswordRequired" title="Password is required." style="color:Red;visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input id="Login1_RememberMe" type="checkbox" name="Login1$RememberMe"><label for="Login1_RememberMe">Remember me next time.</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2" style="color:Red;">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" colspan="2">
+                                        <input type="submit" name="Login1$LoginButton" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Login1$LoginButton&quot;, &quot;&quot;, true, &quot;Login1&quot;, &quot;&quot;, false, false))" id="Login1_LoginButton">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+	</tr>
+</tbody></table>
+        <br>
+    
+    </div>
+     <p>
+    
+    </p>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("Login1_UserNameRequired"), document.getElementById("Login1_PasswordRequired"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var Login1_UserNameRequired = document.all ? document.all["Login1_UserNameRequired"] : document.getElementById("Login1_UserNameRequired");
+Login1_UserNameRequired.controltovalidate = "Login1_UserName";
+Login1_UserNameRequired.errormessage = "User Name is required.";
+Login1_UserNameRequired.validationGroup = "Login1";
+Login1_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Login1_UserNameRequired.initialvalue = "";
+var Login1_PasswordRequired = document.all ? document.all["Login1_PasswordRequired"] : document.getElementById("Login1_PasswordRequired");
+Login1_PasswordRequired.controltovalidate = "Login1_Password";
+Login1_PasswordRequired.errormessage = "Password is required.";
+Login1_PasswordRequired.validationGroup = "Login1";
+Login1_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Login1_PasswordRequired.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+</body></html>

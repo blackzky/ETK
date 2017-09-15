@@ -1,0 +1,19 @@
+{
+    "name": "etk",
+    "version": "1.0.0",
+    "description": "A script that calculates the estimated time out using the inputted time in/outs (multiple time logs in a day)",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "http-server www/",
+        "cd": "npm run compile && npm run deploy",
+        "compile": "tsc -p src/",
+        "deploy": "mv build/**/*.spec.js test/unit/",
+        "clean": "rm -rf build/* test/unit/*",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Gervel Giva",
+    "license": "ISC"
+}
