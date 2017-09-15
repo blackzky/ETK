@@ -11,7 +11,7 @@
         "start": "http-server www/",
         "compile": "tsc -p src/",
         "t1": "grunt clean && tsc -w -p src/",
-        "t2": "grunt move && grunt watch",
+        "t2": "grunt watch",
         "t3": "npm test",
         "test": "karma start test/karma.conf.js"
     },

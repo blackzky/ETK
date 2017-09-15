@@ -1,12 +1,12 @@
 describe('TimeChecker', () => {
-    it('tc test 1', () => {
+    it('c test 1', () => {
         expect(true).toBeTruthy();
     });
-    it('tc test 2', () => {
+    it('c test 2', () => {
         expect(false).toBeFalsy();
     });
 
-    it('tc test 3', () => {
+    it('c test 3', () => {
         expect(false).toEqual(false);
     });
 });
