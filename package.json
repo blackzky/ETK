@@ -7,13 +7,21 @@
         "test": "test"
     },
     "scripts": {
+        "setup": "npm install karma karma-jasmine jasmine-core karma-chrome-launcher karma-jasmine-html-reporter --save-dev",
         "start": "http-server www/",
         "cd": "npm run compile && npm run deploy",
         "compile": "tsc -p src/",
         "deploy": "mv build/**/*.spec.js test/unit/",
         "clean": "rm -rf build/* test/unit/*",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "karma start ./test/client/karma.conf.js"
     },
     "author": "Gervel Giva",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "jasmine-core": "^2.8.0",
+        "karma": "^1.7.1",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-jasmine-html-reporter": "^0.2.2"
+    }
 }
