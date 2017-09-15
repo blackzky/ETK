@@ -1,15 +1,12 @@
-console.log('Time!');
-
-
-describe('Test', () => {
-    it('test 1', () => {
+describe('TimeLog', () => {
+    it('tl test 1', () => {
         expect(true).toBeTruthy();
     });
-    it('test 2', () => {
+    it('tl test 2', () => {
         expect(false).toBeFalsy();
     });
 
-    it('test 3', () => {
+    it('tl test 3', () => {
         expect(false).toEqual(false);
     });
 });
