@@ -9,11 +9,9 @@
     "scripts": {
         "setup": "npm install karma karma-jasmine jasmine-core karma-chrome-launcher karma-jasmine-html-reporter --save-dev",
         "start": "http-server www/",
-        "cd": "npm run compile && npm run deploy",
-        "compile": "tsc -p src/",
-        "deploy": "mv build/**/*.spec.js test/unit/",
+        "compile": "tsc -w -p src/",
         "clean": "rm -rf build/* test/unit/*",
-        "test": "karma start ./test/karma.conf.js"
+        "test": "karma start karma.conf.js"
     },
     "author": "Gervel Giva",
     "license": "ISC",
@@ -22,9 +20,7 @@
         "karma": "^1.7.1",
         "karma-chrome-launcher": "^2.2.0",
         "karma-jasmine": "^1.1.0",
-        "karma-jasmine-html-reporter": "^0.2.2"
-    },
-    "dependencies": {
+        "karma-jasmine-html-reporter": "^0.2.2",
         "@types/jasmine": "^2.6.0",
         "@types/jasminewd2": "^2.0.3",
         "@types/node": "^8.0.28"
